@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkm0pumntjywu"
-path="res://.godot/imported/pandora_idle.png-d6c86a175e9d93dfe2c9bec0fe2efe17.ctex"
+uid="uid://dvws7xat83vn2"
+path="res://.godot/imported/pandora_idle_120x90.png-8c70776b2e9b3b31b1c3532babd24c5e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/pandora/pandora_idle.png"
-dest_files=["res://.godot/imported/pandora_idle.png-d6c86a175e9d93dfe2c9bec0fe2efe17.ctex"]
+source_file="res://assets/characters/pandora/pandora_idle_120x90.png"
+dest_files=["res://.godot/imported/pandora_idle_120x90.png-8c70776b2e9b3b31b1c3532babd24c5e.ctex"]
 
 [params]
 

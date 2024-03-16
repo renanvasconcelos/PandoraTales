@@ -1,11 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710617100
+::res://::1710622901
 icon.svg::CompressedTexture2D::2908392759222056212::1710616605::1710616614::1::::<><>::
 README.md::TextFile::-1::1710616456::0::1::::<><>::
+world_01.tscn::PackedScene::2139434342067603294::1710622901::0::1::::<><>::uid://bvq41umf8157n::::res://assets/tileSets/Seasonal Tilesets/3 - Tropics/Terrain (16 x 16).png<>uid://bkm0pumntjywu::::res://assets/characters/pandora/pandora_idle.png<>res://scripts/characters/pandora.gd<>uid://c83l31re3bdo5::::res://assets/tileSets/Seasonal Tilesets/3 - Tropics/Tropics_entities (16 x 16).png<>uid://f50uar32u4gj::::res://assets/characters/pandora/pandora_walk.png
 ::res://assets/::1710617173
 ::res://assets/characters/::1710617132
-::res://assets/characters/pandora/::1710617259
-pandora_idle.png::CompressedTexture2D::1926158192748170063::1710612128::1710617282::1::::<><>::
+::res://assets/characters/pandora/::1710623012
+pandora_idle.png::CompressedTexture2D::3114627434470966264::1710612128::1710622560::1::::<><>::
+pandora_idle_120x90.png::CompressedTexture2D::8679795338287602041::1710623004::1710623014::1::::<><>::
+pandora_walk.png::CompressedTexture2D::414429219079982553::1710620482::1710622560::1::::<><>::
 ::res://assets/tileSets/::1710617191
 ::res://assets/tileSets/Seasonal Tilesets/::1710617191
 LICENSE.txt::TextFile::-1::1594744344::0::1::::<><>::
@@ -59,3 +62,6 @@ Metal_Wire_fence (16 x 16).png::CompressedTexture2D::6554239392153097411::159473
 Rock_shape (16 x 16).png::CompressedTexture2D::4752355912899173490::1594826148::1710617192::1::::<><>::
 Snack_machine_Bench_Trash_bin (16 x 16).png::CompressedTexture2D::92025388681125539::1594737290::1710617192::1::::<><>::
 Water_frames (16 x 32).png::CompressedTexture2D::7247173496082621113::1594736418::1710617192::1::::<><>::
+::res://scripts/::1710618190
+::res://scripts/characters/::1710622747
+pandora.gd::GDScript::-1::1710622747::0::1::::<>CharacterBody2D<>::
