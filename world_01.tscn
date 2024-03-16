@@ -1,0 +1,59 @@
+[gd_scene load_steps=8 format=3 uid="uid://5qmf2yrauepq"]
+
+[ext_resource type="Texture2D" uid="uid://2pbsq5eu4bit" path="res://assets/characters/pandora/pandora_idle.png" id="1_dcr7b"]
+[ext_resource type="Script" path="res://scripts/characters/pandora.gd" id="1_f36tb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q3qwq"]
+atlas = ExtResource("1_dcr7b")
+region = Rect2(0, 0, 40, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nqut"]
+atlas = ExtResource("1_dcr7b")
+region = Rect2(40, 0, 40, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7d8rd"]
+atlas = ExtResource("1_dcr7b")
+region = Rect2(80, 0, 40, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5eouy"]
+atlas = ExtResource("1_dcr7b")
+region = Rect2(120, 0, 40, 30)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qbio5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q3qwq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0nqut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7d8rd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5eouy")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[node name="world-01" type="Node2D"]
+
+[node name="pandora" type="CharacterBody2D" parent="."]
+scale = Vector2(3, 3)
+script = ExtResource("1_f36tb")
+
+[node name="anim" type="AnimatedSprite2D" parent="pandora"]
+position = Vector2(233, 150)
+sprite_frames = SubResource("SpriteFrames_qbio5")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.221473
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="pandora"]
+visible = false
+position = Vector2(216, 144)
+build_mode = 1
+polygon = PackedVector2Array(28, -2, 34, 4, 27, 7, 27, 17, 8, 18, 9, 8, -1, 3, 2, -2, 10, 3, 22, 2, 23, -2)
