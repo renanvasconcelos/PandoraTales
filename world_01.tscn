@@ -55,7 +55,7 @@ position = Vector2(0.333328, 2)
 sprite_frames = SubResource("SpriteFrames_qbio5")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.765113
+frame_progress = 0.539594
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="pandora"]
 visible = false
@@ -63,8 +63,7 @@ build_mode = 1
 polygon = PackedVector2Array(16.3333, -3.66666, 16, 1.66667, 11, 4, 11, 13, -8.33333, 13, -8.66667, 3.33334, -16.6667, -2, -14.3333, -5.33333, -6.66667, -1.66666, 4, -2, 6.66667, -8)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(111, 177)
+position = Vector2(575, 550)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(476, 354)
 shape = SubResource("SegmentShape2D_gggog")
