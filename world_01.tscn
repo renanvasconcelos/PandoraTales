@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://5qmf2yrauepq"]
+[gd_scene load_steps=9 format=3 uid="uid://5qmf2yrauepq"]
 
 [ext_resource type="Texture2D" uid="uid://2pbsq5eu4bit" path="res://assets/characters/pandora/pandora_idle.png" id="1_dcr7b"]
 [ext_resource type="Script" path="res://scripts/characters/pandora.gd" id="1_f36tb"]
@@ -39,21 +39,32 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_gggog"]
+a = Vector2(600, 0)
+b = Vector2(-600, 0)
+
 [node name="world-01" type="Node2D"]
 
 [node name="pandora" type="CharacterBody2D" parent="."]
+position = Vector2(530, 252)
 scale = Vector2(3, 3)
 script = ExtResource("1_f36tb")
 
 [node name="anim" type="AnimatedSprite2D" parent="pandora"]
-position = Vector2(233, 150)
+position = Vector2(0.333328, 2)
 sprite_frames = SubResource("SpriteFrames_qbio5")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.221473
+frame_progress = 0.765113
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="pandora"]
 visible = false
-position = Vector2(216, 144)
 build_mode = 1
-polygon = PackedVector2Array(28, -2, 34, 4, 27, 7, 27, 17, 8, 18, 9, 8, -1, 3, 2, -2, 10, 3, 22, 2, 23, -2)
+polygon = PackedVector2Array(16.3333, -3.66666, 16, 1.66667, 11, 4, 11, 13, -8.33333, 13, -8.66667, 3.33334, -16.6667, -2, -14.3333, -5.33333, -6.66667, -1.66666, 4, -2, 6.66667, -8)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(111, 177)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(476, 354)
+shape = SubResource("SegmentShape2D_gggog")
